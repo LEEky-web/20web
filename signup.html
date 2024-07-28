@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>20. - Create Account</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="signup.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Khand:wght@500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="background"></div>
+    <div class="content">
+        <h1 class="page-title">Create Account</h1>
+        <div class="form-container">
+            <!-- 각 input-group의 id를 추가하여 개별적으로 위치 조정 가능 -->
+            <div class="input-group" id="email-group">
+                <input type="email" id="email" required placeholder=" ">
+                <label for="email">E-mail</label>
+            </div>
+            <div class="input-group" id="nickname-group">
+                <input type="text" id="nickname" required placeholder=" ">
+                <label for="nickname">Nick Name</label>
+            </div>
+            <div class="input-group" id="password-group">
+                <input type="password" id="password" required placeholder=" ">
+                <label for="password">Pass word</label>
+            </div>
+            <div class="input-group" id="confirm-password-group">
+                <input type="password" id="confirm-password" required placeholder=" ">
+                <label for="confirm-password">Confirm Password</label>
+            </div>
+        </div>
+        <!-- Sign up 버튼을 form-container 밖으로 이동 -->
+        <button type="submit" class="sign-up-btn">Sign up</button>
+    </div>
+    <script src="signup.js"></script>
+</body>
+</html>
